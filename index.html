@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <title>Un dia en Zarate</title>
+</head>
+<body>
+    <header class="header content">
+        <div class="header-video">
+          <video src="fondo.mp4" autoplay loop muted playsinline poster=""></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content text-center">
+          <h1>Naila,</h1>
+          <p>te invito a pasar el dia en Zarate!</p>
+          <a href="#cuando" class="boton" id="boton-cuando">Cuando ?</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-fecha text-center" id="cuando">
+            <div class="image-cuando text-center" data-aos="fade-up-right" data-aos-duration="600">
+                <img src="corona.png" class ="img-fluid" alt="corona">
+            </div>
+            <div class="el-xv" data-aos="fade-up-right" data-aos-duration="600"> 
+                <h2>Cita en Zarate</h2>
+            </div>
+            <div class="cuando-text" data-aos="fade-up-right" data-aos-duration="600">
+                    <h3>Cuándo</h3>
+                    <h6>18 de Mayo del 2024</h4>
+            </div>
+            <div class="donde-text" data-aos="fade-up-right" data-aos-duration="600">
+                    <h3>Dónde</h3>
+                    <h6>Punto de encuentro - dia en Zarate</h6>
+            </div>
+            <div class="vestimenta-text" data-aos="fade-up-right" data-aos-duration="600">
+                <h3>Vestimenta</h3>
+                <h6>Como gustes, algo comodo</h6>
+        </div>
+            <div class="container-time-one" id="temporizador" data-aos="fade-up-right" data-aos-duration="600">
+                <div class="row container-time ">
+                    <div class="text-quedan">
+                        <h3>QUEDAN</h3>
+                    </div>
+                    <div class="col">
+                    <span class="days" id="day"></span>
+                    <div class="smalltext">Dias</div>
+                    </div>
+                    <div class="col">
+                    <span class="hours" id="hour"></span>
+                    <div class="smalltext">Horas</div>
+                    </div>
+                    <div class="col">
+                    <span class="minutes" id="minute"></span>
+                    <div class="smalltext">Minutos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="confirmar-asistencia container text-center">
+        <div class="confirmacion-text" data-aos="fade-up-left">
+            <div class="el-xv"> 
+                <h4>Confirmacion de Asistencia!</h4>
+            </div>
+        </div>
+        <div class="confirmacion-wapp" data-aos="fade-up-left">
+            <div class="row">
+                <div class="col confirmacion">
+                    <h5>Confirmacion via Whatsapp</h5>
+                </div>
+                <div class="col">
+                    <a href="https://api.whatsapp.com/send?phone=+5491133435210&text=Hola!%20Quiero%20confirmar%20asistencia%20a%20la%20cita!%20Gracias%20por%20la%20invitaci%C3%B3n!"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="container-time-one" id="temporizador">
+            <div>
+                Diseñado por &#169;Olra
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+        );
+    </script>
+    <script>
+        var deadline = new Date("May 18, 2024 06:00").getTime();
+        
+        var x = setInterval(function() {
+        
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("day").innerHTML =days ;
+        document.getElementById("hour").innerHTML =hours;
+        document.getElementById("minute").innerHTML = minutes;
+        document.getElementById("second").innerHTML = minutes;  
+        if (t < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "TIME UP";
+                document.getElementById("day").innerHTML ='0';
+                document.getElementById("hour").innerHTML ='0';
+                document.getElementById("minute").innerHTML ='0' ; 
+                document.getElementById("second").innerHTML = '0'; }
+        }, 1000);
+
+
+        var element = document.querySelector("boton-cuando");
+
+        element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+    </script>
+</body>
+</html>
